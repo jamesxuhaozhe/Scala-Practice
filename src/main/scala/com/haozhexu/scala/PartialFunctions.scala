@@ -2,7 +2,7 @@ package com.haozhexu.scala
 
 class PartialFunctions {
 
-  val pf1: PartialFunctions = {case s: String => "YES"}
+  //val pf1: PartialFunctions = {case s: String => "YES"}
 
   def main(args: Array[String]): Unit = {
     val p1 = new MyPoint(x = 3.3, y = 4.4)

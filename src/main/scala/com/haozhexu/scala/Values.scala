@@ -24,7 +24,7 @@ class Values {
     val anotherSymbol: Symbol = 'foo
 
     //xml element
-    val anXMLElement = <a>{aString}</a>
+    //val anXMLElement = <a>{aString}</a>
     // Tuple
     val aPair = (aString, aDouble)
     // explicit tuple declare
