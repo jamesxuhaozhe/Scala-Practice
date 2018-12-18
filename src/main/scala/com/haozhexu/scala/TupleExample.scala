@@ -24,7 +24,10 @@ object TupleExample {
         |Second line\t
         |Fourth line
       """.stripMargin
+
+    println(string)
   }
+
 
   def makeList(strings: String*) = {
     if (strings.length == 1) {
@@ -36,6 +39,7 @@ object TupleExample {
     val intToStringMap: mutable.HashMap[Integer, String] = new mutable.HashMap()
 
     val intToStringMap1 = new mutable.HashMap[Integer, String]()
+
 
   }
 }
