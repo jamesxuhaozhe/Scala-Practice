@@ -17,7 +17,7 @@ object CrazyExample {
       } catch {
         case NonFatal(ex) => println(s"Non Fatal exception! &ex")
       } finally {
-        if (res != None) {
+        if (res.isDefined) {
           println(s"Closing resource...")
           res.get.close
         }
