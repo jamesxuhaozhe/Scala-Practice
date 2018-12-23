@@ -2,6 +2,7 @@ package com.haozhexu.scala.patternmatching
 
 object PatternMatching {
   def main(args: Array[String]): Unit = {
+
     val bools = Seq(true, false)
     for (bool <- bools) {
       bool match {
