@@ -30,12 +30,12 @@ object Example5_1 {
       println(s"${calcTax(100F)}")
     }
 
-    case class MyList[A](list: List[A]) {
+/*    case class MyList[A](list: List[A]) {
       def sortBy1[B](f: A => B)(implicit order: Ordering[B]): List[A] =
         list.sortBy(f)(order)
 
       def sortBy2[B : Ordering](f: A => B): List[A] = list.sortBy(f)[Ordering[B]]
-    }
+    }*/
 
   }
 }
