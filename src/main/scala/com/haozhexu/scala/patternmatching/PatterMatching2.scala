@@ -11,6 +11,20 @@ object PatterMatching2 {
     val nonEmptyMap = Map("one" -> 1, "two" -> 2, "three" -> 3)
     val emptyMap = Map.empty[String, Int]
 
+    val list0 = List(1, 2, 3, 4, 5, 7, 7, 9)
+    val emptyList0 = Nil
+    val map0 = Map("one" -> 1, "two" -> 2, "three" -> 3)
+
+    def windows2[T](seq: Seq[T]): String = seq match {
+      case head1 +: head2 +: tail => s"($head1, $head2), " + windows2(tail)
+      case head +: tail => s"($head, _), " + windows2(tail)
+      case Nil => "Nil"
+    }
+
+    for (seq <- Seq(list0, emptyList0, map0.toList)) {
+      println(windows2(seq))
+    }
+
     def setToString[T](seq: Seq[T]): String = seq match {
       case head +: tail => s"$head +: " + setToString(tail)
       case Nil => "Nil"
@@ -29,5 +43,7 @@ object PatterMatching2 {
       case head :: tail => s"($head :: ${listToString2(tail)})"
       case Nil => "(Nil)"
     }
+
+
   }
 }
